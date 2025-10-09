@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf master - أداة متقدمة لمعالجة ملفات PDF مجاناً</title>
+    <meta name="description" content="pdf master هو أفضل أداة مجانية لمعالجة ملفات PDF. ادمج، اقسم، ضغط، حوّل، وقم بتعديل ملفات PDF بسهولة وسرعة. أدوات احترافية مجانية بالكامل.">
+    <meta name="keywords" content="PDF, معالجة PDF, دمج PDF, تقسيم PDF, ضغط PDF, تحويل PDF, تحرير PDF, أداة PDF مجانية">
+    <meta name="author" content="يوسف فارس">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="pdf master - أداة متقدمة لمعالجة ملفات PDF مجاناً">
+    <meta property="og:description" content="pdf master هو أفضل أداة مجانية لمعالجة ملفات PDF. ادمج، اقسم، ضغط، حوّل، وقم بتعديل ملفات PDF بسهولة وسرعة. أدوات احترافية مجانية بالكامل.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://pdfmaster.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="pdf master - أداة متقدمة لمعالجة ملفات PDF مجاناً">
+    <meta name="twitter:description" content="pdf master هو أفضل أداة مجانية لمعالجة ملفات PDF. ادمج، اقسم، ضغط، حوّل، وقم بتعديل ملفات PDF بسهولة وسرعة. أدوات احترافية مجانية بالكامل.">
+    <meta name="twitter:image" content="logo.jpg">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="pdf master" class="logo-img">
+                <h1>pdf master</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-translate="nav-home">الرئيسية</a></li>
+                    <li><a href="#pdf-tools" class="nav-link" data-translate="nav-pdf-tools">أدوات PDF</a></li>
+                    <li><a href="#url-tools" class="nav-link" data-translate="nav-url-tools">أدوات الروابط</a></li>
+                    <li><a href="#about" class="nav-link" data-translate="nav-about">من نحن</a></li>
+                    <li><a href="#contact" class="nav-link" data-translate="nav-contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="lang-toggle">
+                <button id="langBtn" class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">العربية</span>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <!-- قسم البطل -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 data-translate="hero-title">أداة متقدمة لمعالجة ملفات PDF</h2>
+                    <p data-translate="hero-description">ادمج، اقسم، ضغط، حوّل، وعدل ملفات PDF بسهولة وسرعة. أدوات احترافية مجانية بالكامل.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="startNowBtn" data-translate="hero-start">ابدأ الآن</button>
+                        <button class="btn-secondary" id="watchDemoBtn" data-translate="hero-demo">شاهد الفيديو التعريفي</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/seed/pdfmaster/600/400.jpg" alt="pdf master">
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم أدوات PDF -->
+        <section id="pdf-tools" class="tools">
+            <div class="container">
+                <h2 data-translate="pdf-tools-title">أدوات PDF المتقدمة</h2>
+                <p data-translate="pdf-tools-description">استخدم مجموعة واسعة من الأدوات لمعالجة ملفات PDF بسهولة</p>
+                
+                <div class="tools-container">
+                    <div class="tool-card" data-tool="merge">
+                        <div class="tool-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h3 data-translate="tool-merge-title">دمج ملفات PDF</h3>
+                        <p data-translate="tool-merge-desc">ادمج عدة ملفات PDF في ملف واحد</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملفات</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="split">
+                        <div class="tool-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3 data-translate="tool-split-title">تقسيم ملفات PDF</h3>
+                        <p data-translate="tool-split-desc">قسّم ملف PDF إلى عدة ملفات</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="compress">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <h3 data-translate="tool-compress-title">ضغط ملفات PDF</h3>
+                        <p data-translate="tool-compress-desc">قلل حجم ملفات PDF مع الحفاظ على الجودة</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="convert">
+                        <div class="tool-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 data-translate="tool-convert-title">تحويل PDF</h3>
+                        <p data-translate="tool-convert-desc">حوّل PDF إلى صيغ أخرى</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="lock">
+                        <div class="tool-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 data-translate="tool-lock-title">قفل PDF</h3>
+                        <p data-translate="tool-lock-desc">أضف كلمة مرور لحماية ملفات PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="unlock">
+                        <div class="tool-icon">
+                            <i class="fas fa-unlock"></i>
+                        </div>
+                        <h3 data-translate="tool-unlock-title">فك قفل PDF</h3>
+                        <p data-translate="tool-unlock-desc">احذف كلمة المرور من ملفات PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="watermark">
+                        <div class="tool-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 data-translate="tool-watermark-title">إضافة علامة مائية</h3>
+                        <p data-translate="tool-watermark-desc">أضف نص أو صورة كعلامة مائية</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="organize">
+                        <div class="tool-icon">
+                            <i class="fas fa-sort-amount-up"></i>
+                        </div>
+                        <h3 data-translate="tool-organize-title">ترتيب الصفحات</h3>
+                        <p data-translate="tool-organize-desc">غيّر ترتيب صفحات ملف PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="repair">
+                        <div class="tool-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 data-translate="tool-repair-title">إصلاح PDF</h3>
+                        <p data-translate="tool-repair-desc">أصلح الملفات التالفة</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="sign">
+                        <div class="tool-icon">
+                            <i class="fas fa-signature"></i>
+                        </div>
+                        <h3 data-translate="tool-sign-title">توقيع إلكتروني</h3>
+                        <p data-translate="tool-sign-desc">أضف توقيعك الإلكتروني إلى ملفات PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="rotate">
+                        <div class="tool-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 data-translate="tool-rotate-title">تدوير الصفحات</h3>
+                        <p data-translate="tool-rotate-desc">در صفحات ملف PDF بزاوية محددة</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="extract">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-export"></i>
+                        </div>
+                        <h3 data-translate="tool-extract-title">استخراج الصفحات</h3>
+                        <p data-translate="tool-extract-desc">استخرج صفحات محددة من ملف PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-select">اختر ملف</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم أدوات الروابط -->
+        <section id="url-tools" class="tools">
+            <div class="container">
+                <h2 data-translate="url-tools-title">أدوات الروابط والتحويل</h2>
+                <p data-translate="url-tools-description">استخدم هذه الأدوات لتحويل الروابط والنصوص إلى صيغ مختلفة</p>
+                
+                <div class="tools-container">
+                    <div class="tool-card" data-tool="link-to-qr">
+                        <div class="tool-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 data-translate="tool-link-qr-title">تحويل رابط إلى QR</h3>
+                        <p data-translate="tool-link-qr-desc">حوّل أي رابط إلى رمز QR</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-generate">إنشاء</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="text-to-qr">
+                        <div class="tool-icon">
+                            <i class="fas fa-font"></i>
+                        </div>
+                        <h3 data-translate="tool-text-qr-title">تحويل نص إلى QR</h3>
+                        <p data-translate="tool-text-qr-desc">حوّل أي نص إلى رمز QR</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-generate">إنشاء</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="link-to-pdf">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3 data-translate="tool-link-pdf-title">تحويل رابط إلى PDF</h3>
+                        <p data-translate="tool-link-pdf-desc">حوّل محتوى صفحة الويب إلى PDF</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-convert">تحويل</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="link-to-html">
+                        <div class="tool-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 data-translate="tool-link-html-title">تحويل رابط إلى HTML</h3>
+                        <p data-translate="tool-link-html-desc">احصل على كود HTML لصفحة الويب</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-convert">تحويل</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="link-to-image">
+                        <div class="tool-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3 data-translate="tool-link-image-title">تحويل رابط إلى صورة</h3>
+                        <p data-translate="tool-link-image-desc">حوّل صفحة الويب إلى صورة</p>
+                        <button class="btn-primary tool-btn" data-translate="tool-convert">تحويل</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم رفع الملفات -->
+        <section class="file-upload" id="fileUploadSection" style="display: none;">
+            <div class="container">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3 data-translate="upload-title">اسحب وأفلت ملفات PDF هنا</h3>
+                    <p data-translate="upload-or">أو</p>
+                    <button class="btn-secondary" id="selectFilesBtn" data-translate="upload-select">اختر ملفات من جهازك</button>
+                    <input type="file" id="fileInput" multiple accept=".pdf">
+                </div>
+                
+                <div class="file-list" id="fileList" style="display: none;">
+                    <h3 data-translate="file-list-title">الملفات المحددة:</h3>
+                    <ul id="filesContainer"></ul>
+                    <div class="tool-options" id="toolOptions" style="display: none;">
+                        <!-- سيتم إضافة خيارات الأداة هنا ديناميكيًا -->
+                    </div>
+                    <div class="actions">
+                        <button class="btn-secondary" id="addMoreBtn" data-translate="add-more">إضافة المزيد من الملفات</button>
+                        <button class="btn-primary" id="processBtn" data-translate="process">معالجة الملفات</button>
+                    </div>
+                </div>
+                
+                <div class="processing" id="processingSection" style="display: none;">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" id="progressBar"></div>
+                        </div>
+                        <p id="progressText" data-translate="processing">جاري المعالجة...</p>
+                    </div>
+                </div>
+                
+                <div class="result" id="resultSection" style="display: none;">
+                    <h3 data-translate="result-title">اكتملت المعالجة!</h3>
+                    <p data-translate="result-desc">يمكنك الآن تنزيل ملفاتك المعالجة.</p>
+                    <div class="result-actions">
+                        <button class="btn-primary" id="downloadBtn" data-translate="download">تنزيل الملفات</button>
+                        <button class="btn-secondary" id="shareBtn" data-translate="share">مشاركة</button>
+                        <button class="btn-secondary" id="startNewBtn" data-translate="start-new">بدء معالجة جديدة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم QR -->
+        <section class="qr-section" id="qrSection" style="display: none;">
+            <div class="container">
+                <div class="qr-container">
+                    <h3 data-translate="qr-result-title">تم إنشاء رمز QR بنجاح!</h3>
+                    <div class="qr-result">
+                        <div id="qrcode"></div>
+                    </div>
+                    <div class="qr-actions">
+                        <button class="btn-primary" id="downloadQrBtn" data-translate="download-qr">تنزيل رمز QR</button>
+                        <button class="btn-secondary" id="newQrBtn" data-translate="new-qr">إنشاء رمز جديد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المميزات -->
+        <section class="features">
+            <div class="container">
+                <h2 data-translate="features-title">لماذا تختار pdf master؟</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 data-translate="feature-speed-title">سريع وفعال</h3>
+                        <p data-translate="feature-speed-desc">معالجة سريعة للملفات دون تأخير</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>معالجة فورية للملفات الصغيرة</li>
+                                <li>معالجة متوازية للملفات الكبيرة</li>
+                                <li>تقنيات متقدمة لتسريع العمليات</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-translate="feature-security-title">آمن وموثوق</h3>
+                        <p data-translate="feature-security-desc">ملفاتك محمية ومشفرة أثناء المعالجة</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>تشفير SSL/TLS لنقل الملفات</li>
+                                <li>حذف تلقائي للملفات بعد 24 ساعة</li>
+                                <li>عدم تخزين معلوماتك الشخصية</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 data-translate="feature-compatible-title">يعمل على جميع الأجهزة</h3>
+                        <p data-translate="feature-compatible-desc">استخدمه على الكمبيوتر، الجوال، أو الجهاز اللوحي</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>متوافق مع جميع المتصفحات الحديثة</li>
+                                <li>واجهة مستخدم متجاوبة</li>
+                                <li>لا حاجة لتثبيت أي برامج</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 data-translate="feature-free-title">مجاني بالكامل</h3>
+                        <p data-translate="feature-free-desc">استخدم جميع الأدوات مجاناً دون قيود</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>لا توجد رسوم خفية</li>
+                                <li>جميع الميزات متاحة مجاناً</li>
+                                <li>معالجة غير محدودة للملفات</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Features Section -->
+                <div class="additional-features">
+                    <h3>مميزات إضافية</h3>
+                    <div class="additional-features-grid">
+                        <div class="additional-feature">
+                            <div class="additional-feature-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h4>معالجة ذكية</h4>
+                            <p>تقنيات الذكاء الاصطناعي لتحسين جودة الملفات المعالجة</p>
+                        </div>
+                        <div class="additional-feature">
+                            <div class="additional-feature-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h4>تخزين سحابي</h4>
+                            <p>احفظ ملفاتك المعالجة في السحابة للوصول إليها في أي وقت</p>
+                        </div>
+                        <div class="additional-feature">
+                            <div class="additional-feature-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h4>سجل العمليات</h4>
+                            <p>تتبع جميع عملياتك وإعادة استخدام الإعدادات السابقة</p>
+                        </div>
+                        <div class="additional-feature">
+                            <div class="additional-feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>عمل تعاوني</h4>
+                            <p>شارك الملفات مع فريقك وعمل عليها معاً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأسعار -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 data-translate="pricing-title">الأسعار</h2>
+                <p data-translate="pricing-description">الموقع مجاني بالكامل، جميع الأدوات مجانية</p>
+                
+                <div class="pricing-free">
+                    <div class="pricing-card featured">
+                        <div class="badge" data-translate="pricing-best">الأفضل</div>
+                        <h3 data-translate="pricing-plan">مجاني</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period" data-translate="pricing-forever">للأبد</span>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translate="pricing-unlimited">عمليات غير محدودة</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="pricing-all-tools">جميع الأدوات</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="pricing-no-ads">بدون إعلانات</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="pricing-priority">معالجة أولوية</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="pricing-support">دعم فني</span></li>
+                        </ul>
+                        <button class="btn-primary" data-translate="pricing-start">ابدأ الآن</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم من نحن -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 data-translate="about-title">من نحن</h2>
+                        <p data-translate="about-description">pdf master هو منصة متقدمة لمعالجة ملفات PDF أُنشئت لتلبية جميع احتياجاتك. نقدم مجموعة واسعة من الأدوات الاحترافية التي تساعدك على تعديل وتحويل وإدارة ملفات PDF بسهولة.</p>
+                        <p data-translate="about-mission">مهمتنا هي توفير أداة قوية وسهولة الاستخدام للجميع، سواء كنت طالباً، موظفاً، أو صاحب عمل. نحن نؤمن بأن معالجة ملفات PDF يجب أن تكون سهلة ومتاحة للجميع.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3>1M+</h3>
+                                <p data-translate="stat-users">مستخدم نشط</p>
+                            </div>
+                            <div class="stat">
+                                <h3>5M+</h3>
+                                <p data-translate="stat-files">ملف تمت معالجته</p>
+                            </div>
+                            <div class="stat">
+                                <h3>99.9%</h3>
+                                <p data-translate="stat-satisfaction">معدل رضا العملاء</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://picsum.photos/seed/aboutus/500/400.jpg" alt="من نحن">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم اتصل بنا -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-translate="contact-title">اتصل بنا</h2>
+                <p data-translate="contact-description">هل لديك أي أسئلة أو استفسارات؟ لا تتردد في التواصل معنا</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-translate="contact-address-title">العنوان</h3>
+                                <p>سوريا، دمشق</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3 data-translate="contact-phone-title">الهاتف</h3>
+                                <p>0985998304</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h3 data-translate="contact-instagram-title">انستغرام</h3>
+                                <p>y_f_fa</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="الاسم الكامل" required data-translate-placeholder="contact-name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required data-translate-placeholder="contact-email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="الموضوع" required data-translate-placeholder="contact-subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="رسالتك" required data-translate-placeholder="contact-message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" data-translate="contact-send">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>pdf master</h3>
+                    <p data-translate="footer-description">أداة متقدمة لمعالجة ملفات PDF بسهولة وسرعة. جميع الحقوق محفوظة.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick-links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home" data-translate="footer-home">الرئيسية</a></li>
+                        <li><a href="#pdf-tools" data-translate="footer-pdf-tools">أدوات PDF</a></li>
+                        <li><a href="#url-tools" data-translate="footer-url-tools">أدوات الروابط</a></li>
+                        <li><a href="#about" data-translate="footer-about">من نحن</a></li>
+                        <li><a href="#contact" data-translate="footer-contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-tools">الأدوات</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer-merge">دمج ملفات PDF</a></li>
+                        <li><a href="#" data-translate="footer-split">تقسيم ملفات PDF</a></li>
+                        <li><a href="#" data-translate="footer-compress">ضغط ملفات PDF</a></li>
+                        <li><a href="#" data-translate="footer-convert">تحويل PDF</a></li>
+                        <li><a href="#" data-translate="footer-lock">قفل وفك قفل PDF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-support">الدعم</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer-help">مركز المساعدة</a></li>
+                        <li><a href="#contact" data-translate="footer-contact-us">اتصل بنا</a></li>
+                        <li><a href="#" data-translate="footer-faq">الأسئلة الشائعة</a></li>
+                        <li><a href="#" data-translate="footer-privacy">سياسة الخصوصية</a></li>
+                        <li><a href="#" data-translate="footer-terms">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 pdf master. جميع الحقوق محفوظة. صمم بواسطة <a href="#">يوسف فارس</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- رسالة التنبيه -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <p id="notificationMessage" data-translate="notification-success">تمت العملية بنجاح!</p>
+        </div>
+    </div>
+
+    <!-- URL Tool Modal -->
+    <div class="modal" id="urlToolModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">عنوان النافذة</h3>
+                <button class="close-modal" id="closeUrlModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- سيتم إضافة المحتوى هنا ديناميكيًا -->
+            </div>
+        </div>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
